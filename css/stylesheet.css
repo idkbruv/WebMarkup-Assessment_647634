@@ -1,0 +1,17 @@
+body {
+	background-color: #767978;
+	font-family: "berlin sans fb", "aller", "calibri";
+}
+
+.Nav {
+    list-style-type: none;
+    margin: auto;
+	position: fixed;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navList {
+    float: left;
+}
+  
