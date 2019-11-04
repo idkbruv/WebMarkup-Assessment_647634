@@ -1,18 +1,104 @@
-body {
-	background-color: #767978;
-	font-family: "berlin sans fb", "aller", "calibri";
-}
-
-.Nav {
-    list-style-type: none;
-    margin: auto;
-	position: fixed;
-	background-color: #ffff00;
-    padding: 0;
-    overflow: hidden;
-}
-
-.navList {
-    float: left;
-}
+html {
+    font-family: 'Berlin Sans FB', "Be Vietnam", sans-serif, Arial;
+  }
   
+  .picLinks {
+    width: 2em;
+    height: 2em;
+    float: right;
+    margin-right: 2em;
+  }
+  
+  .logo {
+    grid-area: logo;
+    align-self: center;
+  }
+  
+  #Main {
+    grid-area: Main;
+    margin-top: 2%;
+  }
+  
+  #Secondary {
+    grid-area: Secondary;
+  }
+  
+  #sport {
+    grid-area: sport;
+  }
+  
+  #sidebar {
+    grid-area: sidebar;
+    padding: 1em;
+  }
+  
+  #contact {
+    grid-area: contact;
+    margin-bottom: 0.5em;
+  }
+  
+  #footer {
+    grid-area: footer;
+    background-color: #444444;
+    color: #aaaaaa;
+    margin: -2em;
+  }
+  
+  #Voet {
+    margin-left: 2em;
+  }
+  
+  .container {
+    display: grid;
+    margin: 0 2em;
+    margin-top: 4%;
+    grid-template-columns: 2fr 6fr 4fr;
+    grid-gap: 2em 1em;
+    grid-template-rows: 3em;
+    grid-template-areas:
+      "logo menu menu"
+      "Main Main sidebar"
+      "Secondary Secondary Secondary"
+      "sport sport sport"
+      "contact contact contact"
+      "footer footer footer";
+  }
+  
+  .Nav {
+    background-color: #2699fb;
+    position: fixed;
+    top: 1em;
+  }
+  
+  .Nav,
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    overflow: hidden;
+    grid-area: menu;
+    align-self: center;
+    justify-self: end;
+  }
+  
+  img {
+    width: 5em;
+    height: 5em;
+  }
+  
+  .navList {
+    float: left;
+  }
+  
+  .navList a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0.5em 1em;
+    text-decoration: none;
+  }
+  
+  .navList a:hover {
+    background-color: #444444;
+  }
