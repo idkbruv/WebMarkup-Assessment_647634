@@ -4,8 +4,10 @@ body {
 }
 
 .Nav {
+    list-style-type: none;
+    margin: auto;
 	position: fixed;
-	background-color: #ffffff;
+	background-color: #f;
     padding: 0;
     overflow: hidden;
 }
